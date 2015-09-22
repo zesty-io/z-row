@@ -1,0 +1,430 @@
+/*************************************************************************************************************
+**************************************************************************************************************
+
+    z-row
+
+    Zesty.io's responsive grid system
+
+	https://github.com/zesty-io/z-row
+
+**************************************************************************************************************
+**************************************************************************************************************/
+/*************************************************************************************************************
+* Options
+**************************************************************************************************************/
+/*************************************************************************************************************
+* Grid
+**************************************************************************************************************/
+.z-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 960px) {
+  .z-container.padded {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.z-responsive-width {
+  width: 100%;
+}
+.z-row:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.z-row [class^="col-"],
+.z-row [class*=" col-"] {
+  float: left;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin-bottom: 0px;
+}
+.z-row [class^="col-"]:first-child,
+.z-row [class*=" col-"]:first-child {
+  margin-left: 0px !important;
+}
+.z-row .col-1,
+.z-row .col-1\/1,
+.z-row .col-2\/2,
+.z-row .col-3\/3,
+.z-row .col-4\/4,
+.z-row .col-5\/5,
+.z-row .col-6\/6,
+.z-row .col-7\/7,
+.z-row .col-8\/8,
+.z-row .col-9\/9,
+.z-row .col-10\/10,
+.z-row .col-11\/11,
+.z-row .col-12\/12 {
+  width: 100%;
+  margin-left: 2%;
+}
+.z-row .col-1\/2,
+.z-row .col-2\/4,
+.z-row .col-3\/6,
+.z-row .col-4\/8,
+.z-row .col-6\/12 {
+  width: 49%;
+  margin-left: 2%;
+}
+.z-row .col-1\/3 {
+  width: 32%;
+  margin-left: 2%;
+}
+.z-row .col-2\/3 {
+  width: 66%;
+  margin-left: 2%;
+}
+.z-row .col-1\/4 {
+  width: 23.5%;
+  margin-left: 2%;
+}
+.z-row .col-3\/4 {
+  width: 74.5%;
+  margin-left: 2%;
+}
+.z-row .col-1\/5 {
+  width: 18.4%;
+  margin-left: 2%;
+}
+.z-row .col-2\/5 {
+  width: 38.8%;
+  margin-left: 2%;
+}
+.z-row .col-3\/5 {
+  width: 59.2%;
+  margin-left: 2%;
+}
+.z-row .col-4\/5 {
+  width: 79.6%;
+  margin-left: 2%;
+}
+.z-row .col-1\/6 {
+  width: 15%;
+  margin-left: 2%;
+}
+.z-row .col-2\/6 {
+  width: 32%;
+  margin-left: 2%;
+}
+.z-row .col-4\/6 {
+  width: 66%;
+  margin-left: 2%;
+}
+.z-row .col-5\/6 {
+  width: 83%;
+  margin-left: 2%;
+}
+.z-row .col-1\/7 {
+  width: 12.57142857%;
+  margin-left: 2%;
+}
+.z-row .col-2\/7 {
+  width: 27.14285714%;
+  margin-left: 2%;
+}
+.z-row .col-3\/7 {
+  width: 41.71428571%;
+  margin-left: 2%;
+}
+.z-row .col-4\/7 {
+  width: 56.28571429%;
+  margin-left: 2%;
+}
+.z-row .col-5\/7 {
+  width: 70.85714286%;
+  margin-left: 2%;
+}
+.z-row .col-6\/7 {
+  width: 85.42857143%;
+  margin-left: 2%;
+}
+.z-row .col-1\/8 {
+  width: 10.75%;
+  margin-left: 2%;
+}
+.z-row .col-2\/8 {
+  width: 23.5%;
+  margin-left: 2%;
+}
+.z-row .col-3\/8 {
+  width: 36.25%;
+  margin-left: 2%;
+}
+.z-row .col-5\/8 {
+  width: 61.75%;
+  margin-left: 2%;
+}
+.z-row .col-6\/8 {
+  width: 74.5%;
+  margin-left: 2%;
+}
+.z-row .col-7\/8 {
+  width: 87.25%;
+  margin-left: 2%;
+}
+.z-row .col-1\/9 {
+  width: 9.33333333%;
+  margin-left: 2%;
+}
+.z-row .col-2\/9 {
+  width: 20.66666667%;
+  margin-left: 2%;
+}
+.z-row .col-3\/9 {
+  width: 32%;
+  margin-left: 2%;
+}
+.z-row .col-4\/9 {
+  width: 43.33333333%;
+  margin-left: 2%;
+}
+.z-row .col-5\/9 {
+  width: 54.66666667%;
+  margin-left: 2%;
+}
+.z-row .col-6\/9 {
+  width: 66%;
+  margin-left: 2%;
+}
+.z-row .col-7\/9 {
+  width: 77.33333333%;
+  margin-left: 2%;
+}
+.z-row .col-8\/9 {
+  width: 88.66666667%;
+  margin-left: 2%;
+}
+.z-row .col-1\/10 {
+  width: 8.2%;
+  margin-left: 2%;
+}
+.z-row .col-2\/10 {
+  width: 18.4%;
+  margin-left: 2%;
+}
+.z-row .col-3\/10 {
+  width: 28.6%;
+  margin-left: 2%;
+}
+.z-row .col-4\/10 {
+  width: 38.8%;
+  margin-left: 2%;
+}
+.z-row .col-6\/10 {
+  width: 59.2%;
+  margin-left: 2%;
+}
+.z-row .col-7\/10 {
+  width: 69.4%;
+  margin-left: 2%;
+}
+.z-row .col-8\/10 {
+  width: 79.6%;
+  margin-left: 2%;
+}
+.z-row .col-9\/10 {
+  width: 89.8%;
+  margin-left: 2%;
+}
+.z-row .col-1\/11 {
+  width: 7.27272727%;
+  margin-left: 2%;
+}
+.z-row .col-2\/11 {
+  width: 16.54545455%;
+  margin-left: 2%;
+}
+.z-row .col-3\/11 {
+  width: 25.81818182%;
+  margin-left: 2%;
+}
+.z-row .col-4\/11 {
+  width: 35.09090909%;
+  margin-left: 2%;
+}
+.z-row .col-5\/11 {
+  width: 44.36363636%;
+  margin-left: 2%;
+}
+.z-row .col-6\/11 {
+  width: 53.63636364%;
+  margin-left: 2%;
+}
+.z-row .col-7\/11 {
+  width: 62.90909091%;
+  margin-left: 2%;
+}
+.z-row .col-8\/11 {
+  width: 72.18181818%;
+  margin-left: 2%;
+}
+.z-row .col-9\/11 {
+  width: 81.45454545%;
+  margin-left: 2%;
+}
+.z-row .col-10\/11 {
+  width: 90.72727273%;
+  margin-left: 2%;
+}
+.z-row .col-1\/12 {
+  width: 6.5%;
+  margin-left: 2%;
+}
+.z-row .col-2\/12 {
+  width: 15%;
+  margin-left: 2%;
+}
+.z-row .col-3\/12 {
+  width: 23.5%;
+  margin-left: 2%;
+}
+.z-row .col-4\/12 {
+  width: 32%;
+  margin-left: 2%;
+}
+.z-row .col-5\/12 {
+  width: 40.5%;
+  margin-left: 2%;
+}
+.z-row .col-7\/12 {
+  width: 57.5%;
+  margin-left: 2%;
+}
+.z-row .col-8\/12 {
+  width: 66%;
+  margin-left: 2%;
+}
+.z-row .col-9\/12 {
+  width: 74.5%;
+  margin-left: 2%;
+}
+.z-row .col-10\/12 {
+  width: 83%;
+  margin-left: 2%;
+}
+.z-row .col-11\/12 {
+  width: 91.5%;
+  margin-left: 2%;
+}
+@media screen and (max-width: 912px) {
+  .z-row {
+    margin-bottom: 0px;
+  }
+  .z-row .col-1\/12 {
+    width: 15%;
+    margin-left: 2%;
+    margin-bottom: 0px;
+  }
+  .z-row .col-1\/12:nth-child(7) {
+    margin-left: 0px;
+  }
+  .z-row .col-1\/11 {
+    width: 15%;
+    margin-left: 2%;
+    margin-bottom: 0px;
+  }
+  .z-row .col-1\/11:nth-child(7) {
+    margin-left: 0px;
+  }
+  .z-row .col-1\/10 {
+    width: 18.4%;
+    margin-left: 2%;
+    margin-bottom: 0px;
+  }
+  .z-row .col-1\/10:nth-child(6) {
+    margin-left: 0px;
+  }
+  .z-row .col-1\/9 {
+    width: 32%;
+    margin-left: 2%;
+    margin-bottom: 0px;
+  }
+  .z-row .col-1\/9:nth-child(4),
+  .z-row .col-1\/9:nth-child(7) {
+    margin-left: 0px;
+  }
+  .z-row .col-1\/6 {
+    width: 32%;
+    margin-left: 2%;
+    margin-bottom: 0px;
+  }
+  .z-row .col-1\/6:nth-child(4) {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 672px) {
+  .z-row {
+    margin-bottom: 0px;
+  }
+  .z-row .col-1\/4,
+  .z-row .col-2\/4,
+  .z-row .col-3\/4,
+  .z-row .col-9\/12,
+  .z-row .col-3\/12 {
+    width: 49%;
+    margin-left: 2%;
+    margin-bottom: 0px;
+  }
+  .z-row .col-1\/4:nth-child(3),
+  .z-row .col-2\/4:nth-child(3),
+  .z-row .col-3\/4:nth-child(3),
+  .z-row .col-9\/12:nth-child(3),
+  .z-row .col-3\/12:nth-child(3) {
+    margin-left: 0px;
+  }
+  .z-row .col-1\/12 {
+    width: 32%;
+    margin-left: 2%;
+    margin-bottom: 0px;
+  }
+  .z-row .col-1\/12:nth-child(4),
+  .z-row .col-1\/12:nth-child(7),
+  .z-row .col-1\/12:nth-child(10) {
+    margin-left: 0px;
+  }
+  .z-row .col-1\/8 {
+    width: 49%;
+    margin-left: 2%;
+    margin-bottom: 0px;
+  }
+  .z-row .col-1\/8:nth-child(3),
+  .z-row .col-1\/8:nth-child(5),
+  .z-row .col-1\/8:nth-child(7) {
+    margin-left: 0px;
+  }
+  .z-row .col-3\/8,
+  .z-row .col-5\/8,
+  .z-row .col-7\/8 {
+    float: none;
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  .z-row .col-1\/6 {
+    width: 49%;
+    margin-left: 2%;
+    margin-bottom: 0px;
+  }
+  .z-row .col-1\/6:nth-child(3),
+  .z-row .col-1\/6:nth-child(5) {
+    margin-left: 0px;
+  }
+  .z-row .col-1\/6:nth-child(4) {
+    margin-left: 2%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .z-row {
+    margin-bottom: 0px;
+  }
+  .z-row [class^="col-"],
+  .z-row [class*=" col-"] {
+    float: none;
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    clear: both;
+  }
+}
